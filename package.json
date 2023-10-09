@@ -1,11 +1,12 @@
 {
   "name": "resurrection-production",
-  "source":"src/index.html",
-  "scripts":{
+  "source": "src/index.html",
+  "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
     "node-sass": "^9.0.0",
     "parcel": "^2.9.3"
   },
