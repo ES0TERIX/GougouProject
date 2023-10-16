@@ -33,7 +33,7 @@ header {
 .nexus {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -100%;
   right: auto;
   bottom: 0;
   width: 100%;
@@ -41,7 +41,7 @@ header {
   z-index: 5;
   display: flex;
 
-  transition-delay: 0.1s;
+  // transition-delay: 0.1s;
 
   ul {
     padding: 4rem 0 0 0;
