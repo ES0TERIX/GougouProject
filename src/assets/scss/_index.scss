@@ -13,20 +13,37 @@ html {
   border: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 15vh;
-  z-index: 2;
+  z-index: 10;
+}
+
+.logo-main {
+  height: 100%;
+}
+
+.logo-shop {
+  position: relative;
+  height: 10rem;
+}
+
+.logo-nexus {
+  position: relative;
+  height: 10rem;
+}
+
+.hide-block {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  z-index: 4;
   background-color: white;
 }
 
@@ -40,8 +57,9 @@ header {
   background-color: black;
   z-index: 5;
   display: flex;
-
-  // transition-delay: 0.1s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   ul {
     padding: 4rem 0 0 0;
@@ -49,56 +67,41 @@ header {
     list-style: none;
     display: flex;
     flex-direction: column;
+    text-align: center;
+
     li {
       padding: 0 0 4rem 0;
-      text-align: center;
+
       a {
         text-decoration: none;
         color: white;
       }
+
       .logo {
         width: 50rem;
       }
     }
   }
 }
-main {
-  position: relative;
-}
 
 section {
-  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-}
-
-.logo-main {
-  height: 100%;
-}
-
-.logo-shop {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 10rem;
-  margin-right: 1rem;
-}
-
-.logo-nexus {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  height: 10rem;
 }
 
 nav {
   font-size: 3rem;
   justify-content: center;
+  display: flex;
   li {
+    list-style: none;
     padding: 0 0 10rem 0;
     text-align: center;
     a {
+      color: black;
       text-decoration: none;
     }
   }
@@ -108,18 +111,57 @@ nav {
   border: 2px solid black;
   margin: auto;
   padding: 3rem;
-  height: 60rem;
+  height: 75rem;
   width: 80%;
   text-align: justify;
   overflow: auto;
 }
 
-.actu-container h2 {
-  font-size: 3rem;
-  text-align: center;
-  padding-bottom: 3rem;
+.actu-container {
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
 }
 
-.actu-container p {
-  font-size: 2rem;
+.artist-swipper {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .artist-img {
+    width: 40rem;
+  }
+}
+
+.seminaire {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  .seminaire-img {
+    object-fit: cover;
+    width: 40rem;
+    height: 40rem;
+  }
+
+  h2 {
+    padding-top: 1rem;
+    font-size: 4rem;
+  }
+
+  .date-seminaire {
+    font-size: 3rem;
+  }
+
+  .info-seminaire {
+    font-size: 2rem;
+  }
 }
