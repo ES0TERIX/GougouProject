@@ -1,0 +1,22 @@
+//fourth section
+.seminaire {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  .seminaire-img {
+    object-fit: cover;
+    width: 40rem;
+    height: 40rem;
+  }
+  h2 {
+    padding-top: 1rem;
+    font-size: 4rem;
+  }
+  .date-seminaire {
+    font-size: 3rem;
+  }
+  .info-seminaire {
+    font-size: 2rem;
+  }
+}

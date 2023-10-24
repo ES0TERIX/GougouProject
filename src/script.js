@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Swiper from "swiper";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,4 +38,10 @@ nexus.addEventListener("click", () => {
     });
     test = 0;
   }
+});
+
+const swiper = new Swiper(".artist-swiper", {
+  direction: "horizontal",
+  loop: true,
+  effect: "fade",
 });

@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <title>Resurrection Production</title>
-    <link rel="stylesheet" href="assets/scss/_index.scss" />
+    <script defer type="module" src="script.js"></script>
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/style.scss"/>
   </head>
 
   <body>
     <header>
       <img class="logo-nexus" src="assets/img/Nexus.png" />
-      <img class="logo-main" src="assets/img/LogoRPbis.png" />
+      <img class="logo-main" src="assets/img/LogoRPbis_resized.png" />
       <img class="logo-shop" src="assets/img/Shop.png" />
     </header>
     <div class="hide-block"></div>
@@ -74,11 +76,25 @@
             saepe ducimus. Facilis, aliquid perspiciatis.
           </p>
         </div>
+        <div class="actu-select">
+          <button class="actu-btn btn-1">I</button>
+          <div>-</div>
+          <button class="actu-btn btn-2">II</button>
+        </div>
       </section>
       <section class="panel">
         <div class="artist-swipper">
-          <h2>PERIODD</h2>
-          <img class="artist-img" src="assets/img/Periodd.png">
+        </div>
+        <div class="artist-swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2>PERIODD</h2>
+              <img class="artist-img" src="assets/img/Periodd.png">
+            </div>
+            <div class="swiper-slide">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint commodi cumque dolor! Sapiente ducimus debitis provident quam commodi necessitatibus doloremque ea quisquam adipisci, explicabo molestiae quo? Et culpa temporibus quod doloribus iste impedit facilis aperiam exercitationem maxime in eaque vitae autem odio esse, voluptates a ad sequi modi. Aliquid reprehenderit dolorum quis quam repudiandae magni. Molestias beatae asperiores ab vitae?</p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="panel">
@@ -89,6 +105,5 @@
           <p class="info-seminaire">Lorem ipsum dolor sit amet consectetur adipisicing, vfjbjfibijzbjibebe, bfjbeu, iebajj,kdokzod</p>
         </div>
       </section>
-    <script type="module" src="script.js"></script>
   </body>
 </html>
