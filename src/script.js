@@ -26,7 +26,6 @@ const nexus = document.querySelector(".logo-nexus");
 var test = 0;
 
 nexus.addEventListener("click", () => {
-  console.log(test);
   if (test == 0) {
     tl.to(".nexus", {
       left: "0%",
@@ -44,4 +43,11 @@ const swiper = new Swiper(".artist-swiper", {
   direction: "horizontal",
   loop: true,
   effect: "fade",
+});
+
+const loader = document.querySelector(".loader");
+document.addEventListener("DOMContentLoaded", (e) => {
+  setTimeout(() => {
+    loader.classList.add("display-none");
+  }, 5000);
 });
