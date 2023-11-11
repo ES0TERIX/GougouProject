@@ -1,5 +1,6 @@
 function changeContainer(contentNumber) {
-  const actuContainer = document.getElementsByClassName("actu-container");
+  const actuContainer = document.getElementById("actu-container");
+	console.log(actuContainer)
   if (actuContainer) {
     console.log(actuContainer);
     console.log(typeof actuContainer);
