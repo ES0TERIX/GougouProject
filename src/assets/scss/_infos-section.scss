@@ -1,0 +1,39 @@
+@import "_mixin";
+
+.infos-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  .infos-nexus {
+    width: 50%;
+    margin-top: 15vh;
+    list-style: none;
+    height: 60vh;
+    text-align: center;
+    li {
+      margin-bottom: 3rem;
+    }
+  }
+  #infos-display {
+    width: 50%;
+    margin-top: 15vh;
+    list-style: none;
+    height: 60vh;
+    text-align: center;
+    .infos {
+      animation: slideIn 0.5s ease-in-out forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+}
