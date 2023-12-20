@@ -14,19 +14,17 @@
   align-items: center;
   justify-content: center;
 
-  ul {
+  nav {
     padding: 4rem 0 0 0;
     font-size: 2rem;
     list-style: none;
     display: flex;
     flex-direction: column;
     text-align: center;
-    li {
+    button {
       padding: 0 0 2rem 0;
-      a {
-        text-decoration: none;
-        color: white;
-      }
+      text-decoration: none;
+      color: white;
       .logo {
         width: 50rem;
       }

@@ -18,16 +18,16 @@
     </header>
     <div class="hide-block"></div>
     <div class="nexus">
-      <ul>
-        <li><a class="nexus-link" href="">GÉNÈSE</a></li>
-        <li><a class="nexus-link" href="">ACTUALITÉS</a></li>
-        <li><a class="nexus-link" href="">ARTISTES</a></li>
-        <li><a class="nexus-link" href="">SEMINAIRES</a></li>
-        <li><a class="nexus-link" href="">COMMUNIQUÉS</a></li>
-        <li><a class="nexus-link" href="">CONTACT</a></li>
-      </ul>
+      <nav>
+        <button class="nexus-link" href="">GÉNÈSE</button>
+        <button class="nexus-link" href="">ACTUALITÉS</button>
+        <button class="nexus-link" href="">ARTISTES</button>
+        <button class="nexus-link" href="">SEMINAIRES</button>
+        <button class="nexus-link" href="">COMMUNIQUÉS</button>
+        <button class="nexus-link" href="">CONTACT</button>
+      <nav>
     </div>
-    <section class="panel">
+    <section class="panel" id="section1">
       <nav class="link">
         <ul>
           <li><a href="">RESURRECTION PRODUCTION</a></li>
@@ -37,7 +37,7 @@
         </ul>
       </nav>
     </section>
-    <section class="panel">
+    <section class="panel" id="section2">
       <div id="actu-container">
         <h2>ACTUALITÉS</h2>
         <p>
@@ -76,7 +76,7 @@
         <button onclick="changeContainer(2)" class="actu-btn btn-2">II</button>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel" id="section3">
       <div class="artist-swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -89,7 +89,7 @@
         </div>
       </div>
     </section>
-    <section class="panel">
+    <section class="panel" id="section4">
       <div class="seminaire">
         <img class="seminaire-img" src="assets/img/Seminaire Partie I.png">
         <h2>HUGE EVENT</h2>
@@ -98,7 +98,7 @@
       </div>
     </section>
     <section class="panel">
-      <div class="infos-container">
+      <div class="infos-container" id="section5">
         <ul class="infos-nexus">
           <li onclick="changeInfos(1)">PRESSE</li>
           <li onclick="changeInfos(2)">SORTIES</li>
